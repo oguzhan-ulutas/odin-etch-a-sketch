@@ -28,5 +28,18 @@ function rainbowEffect (e) {
 
 // Add new grid button function
 
+const newGrid = document.querySelector(".newGrid");
+newGrid.addEventListener("click", regenerateGrid)
 
+
+// console.log(cells);
+
+function regenerateGrid () {
+    const cells = document.querySelectorAll(".cell");
+    let gridSide = prompt("Please enter a number between 16 and 100:");
+    if (gridSide) {
+        cells.forEach((cell) => container.removeChild(cell));
+    };
+    gridCreator(gridSide);
+};
 
