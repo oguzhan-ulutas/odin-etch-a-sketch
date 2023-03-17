@@ -43,3 +43,17 @@ function regenerateGrid () {
     gridCreator(gridSide);
 };
 
+// Black button 
+
+const black = document.querySelector(".black");
+// console.log(black);
+black.addEventListener("click",blackEtch);
+
+function blackEtch () {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach((cell) => {
+        cell.addEventListener("mouseenter", () =>{
+            cell.style.backgroundColor = "black";
+        });
+    });
+};
