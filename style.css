@@ -1,5 +1,5 @@
 * {
-    font-family: "Indie Flower", cursive, "Monotype Corsiva", Arial, Helvetica, sans-serif;
+    font-family: "Indie Flower", cursive, "Monotype Corsica", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    font-family: "Indie Flower", cursive, "Monotype Corsiva", Arial, Helvetica, sans-serif;
+    font-family: "Indie Flower", cursive, "Monotype Corsica", Arial, Helvetica, sans-serif;
     font-size: 70px;
     font-weight: lighter;
     color: #FC8585;
@@ -27,7 +27,6 @@ body {
     background-color: white;
 
     display: flex;
-    flex-grow: 1;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;   
