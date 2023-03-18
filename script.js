@@ -103,7 +103,6 @@ function rainbowEtch(){
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
         const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        console.log(randomColor);
         cell.addEventListener("mouseenter",() =>{
             cell.style.backgroundColor = "#" + randomColor;
         });
