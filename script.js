@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 function gridCreator(gridSide = 16) {
     
     for (let i = 0; i < (gridSide * gridSide); i++) {
-        let cellSide = Math.round(500/gridSide - 3); //500 is length of the container div.
+        let cellSide = Math.floor(500/gridSide - 3); //500 is length of the container div.
         const div = document.createElement("div");
         div.classList.add("cell");
         div.setAttribute("style", `width: ${cellSide}px; height: ${cellSide}px;`);

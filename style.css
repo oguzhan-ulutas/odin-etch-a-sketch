@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .header {
@@ -22,6 +23,7 @@ body {
 
 .container {
     border: solid 1px;
+    border-color: #FC8585;
     width: 500px;
     height: 500px;
     background-color: white;
