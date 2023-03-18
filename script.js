@@ -4,15 +4,18 @@ const container = document.querySelector(".container");
 // 100 x 100 when asked.
 
 function gridCreator(gridSide = 16) {
-    
-    for (let i = 0; i < (gridSide * gridSide); i++) {
-        let cellSide = Math.floor(500/gridSide - 3); //500 is length of the container div.
-        const div = document.createElement("div");
-        div.classList.add("cell");
-        div.setAttribute("style", `width: ${cellSide}px; height: ${cellSide}px;`);
-        container.appendChild(div);
-        
-    };
+    if (gridSide < 16 || gridSide > 100) {
+        alert("Out of reach. Please enter a number between 16 ang 100");
+    } else {
+        for (let i = 0; i < (gridSide * gridSide); i++) {
+         
+            let cellSide = Math.floor(500/gridSide - 3); //500 is length of the container div.
+            const div = document.createElement("div");
+            div.classList.add("cell");
+            div.setAttribute("style", `width: ${cellSide}px; height: ${cellSide}px;`);
+            container.appendChild(div);  
+        };
+    }
 };
 
 window.onload = gridCreator();
