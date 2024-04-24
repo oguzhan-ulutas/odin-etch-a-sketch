@@ -1,6 +1,6 @@
 # odin-etch-a-sketch
 
-[The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) exercise to make a rock, paper, and scissors game.
+[The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) exercise, a paint app. User can change canvas and pen.
 
 [Live Preview](https://oguzhan-ulutas.github.io/odin-etch-a-sketch/)
 
